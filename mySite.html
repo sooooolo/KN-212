@@ -1,0 +1,225 @@
+<!DOCTYPE>
+<html lang="ua">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HotEldorado</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+
+<body id='body'>
+    <div class="container">
+        <div class="sidebar">
+            <div class="inner-sidebar" id = "bar">
+                <nav class="nav">
+                  <button id="themenight" onclick="change()">Night</button>
+                    <a class="nav_link" id="Accomodation">Accomodation</a>
+                    <a class="nav_link"  id="Dinning">Dinning</a>
+                    <a class="nav_link"  id="serviceli">Services</a>
+                    <div class="nav_link" href="#" id='other'>Other
+                    	<div class="dropdown-content" id='drop'>
+                    		<a id="Attractions">Attractions</a>
+                    		<a  id="Contact">Contact us</a>
+                    	</div>
+                    </div>
+                  <button id="themeday" onclick="changeday()">Day</button>
+                </nav>
+                   
+            </div>
+        </div>
+        <div class="header">
+            <div class="inner-header" id="wallpaper">
+                <div class="title" id="title">HotEldorado</div>
+            </div>
+        </div>
+        <div class="booking" id = "booking">
+            <form id="form">
+                <input type="text" placeholder="Enter your name" id="name" minlength="2">
+                <input type="text" placeholder="Enter your surname" id="surname"  minlength="2">
+                <input type="date" placeholder="Check-in date" id="indate">
+                <input type="date" placeholder="Check-out date" id="outdate">
+                <input type="number" placeholder="N of people" id="number" >
+                <label class="check" for="checkbox" id="business">In business:</label>
+                <input type="checkbox" id="check">
+                <input type="email" placeholder="Enter your email" id="email">
+                <input type="tel" placeholder="Phone number" id="phone"  minlength="10">
+                <input type="button" onclick="checking()"   value="Check aviability" id="buttoncheck">
+                </form>
+        </div>
+        
+         <section class="serv_section" id="serv_section">
+            <div class="container">
+                <div class="section_header bla">
+                    <h2 class="section_subtitle" id = "servscroll">What we offer</h2>
+                    <h1 class="section_title" id='servsub'>S e r v i c e s</h1>
+                </div>
+            <div class="services">
+                <div class="serv_item">
+                	<img class="serv_icon" src="resid.png">
+                	<div class="serv_title" id="res_id">Residence</div>
+                	<div class="serv_text" text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </div>
+               <div class="serv_item">
+                	<img class="serv_icon" src="meal.png">
+                	<div class="serv_title" id="meal_id">Restaurant</div>
+                	<div class="serv_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </div>
+                <div class="serv_item">
+                	<img class="serv_icon" src="rest.png">
+                	<div class="serv_title" id="act_id">Activities</div>
+                	<div class="serv_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </div>
+             </div>
+              <div class="services">
+                <div class="serv_item">
+                	<img class="serv_icon" src=" lake.png">
+                	<div class="serv_title" id="lake_id">Lake</div>
+                	<div class="serv_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </div>
+               <div class="serv_item">
+                	<img class="serv_icon" src="arbor.png">
+                	<div class="serv_title" id="arb_id">Arbor</div>
+                	<div class="serv_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </div>
+                <div class="serv_item">
+                	<img class="serv_icon" src="spa.png">
+                	<div class="serv_title" id="spa_id">Spa</div>
+                	<div class="serv_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </div>
+             </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="section_header">
+                    <h2 class="section_subtitle" id = "roomscroll">Anything for your comfort</h2>
+                    <h1 class="section_title" >R o o m s</h1>
+                </div>
+
+                <div class="phototext">
+                    <div class="ph_item">
+                        <img src="standardr.jpg" class="responsive">
+                    </div>
+                    <div class="t_item">
+                        <div class="information_header">Standard suite</div>
+                        <div class="information">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="phototext">
+                    <div class="ph_item">
+                        <img src="halflux.jpg" class="responsive">
+                    </div>
+                    <div class="t_item">
+                        <div class="information_header">Half Luxe</div>
+                        <div class="information">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="phototext">
+                    <div class="ph_item">
+                        <img src="Penthouse.jpg" class="responsive">
+                    </div>
+                    <div class="t_item">
+                        <div class="information_header">Penthouse</div>
+                        <div class="information">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="restaurant" id="restaurant">
+            <div class="container">
+                <div class="section_header bla">
+                    <h2 class="section_subtitle" id = "mealscroll">All world cuisines</h2>
+                    <h1 class="section_title" >R e s t a u r a n t</h1>
+                </div>
+                <div class="main">
+                    <img src="Dinning.jpg" class="first_item">
+                </div>
+                <div class="photo">
+                    <div class="photo_item">
+                        <img src="1food.jpg">
+                    </div>
+                    <div class="photo_item">
+                        <img src="2food.jpg">
+                    </div>
+                    <div class="photo_item">
+                        <img src="3food.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+             <section class="Attractions" id='attract'>
+             	<div class="container">
+                <div class="section_header bla">
+                    <h2 class="section_subtitle" id = "actscroll">Enjoy the time</h2>
+                    <h1 class="section_title" >A c t i v i t i e s</h1>
+                </div>
+               <table>
+               	<tr><th>Activities</th><th>Prices</th></tr> 
+               	<tr><td>Lorem Ipsum</td><td>LI</td></tr> 
+               	<tr><td>Lorem Ipsum</td><td>LI</td></tr>
+               	<tr><td>Lorem Ipsum</td><td>LI</td></tr>
+               	<tr><td>Lorem Ipsum</td><td>LI</td></tr>
+               	<tr><td>Lorem Ipsum</td><td>LI</td></tr>
+               	<tr><td>Lorem Ipsum</td><td>LI</td></tr>
+               	<tr><td>Lorem Ipsum</td><td>LI</td></tr>
+               	<tr><td>Lorem Ipsum</td><td>LI</td></tr>
+               	<tr><td>Lorem Ipsum</td><td>LI</td></tr>
+               	<tr><td>Lorem Ipsum</td><td>LI</td></tr>
+               </table>
+
+
+            </div>
+        </section>
+
+    </div>
+
+    <div class="row">
+        <div class="footer">
+            <div class="inner-footer" id='inner-footer'>
+                <div class="footer_header" id = "contactscroll">Contact us</div>
+              <div class="footer_main">
+                 <div class="footer_social">
+                	<div class="social_header">Follow us</div>
+                	<div class="social_items">
+                		<img class="image" src="insta.png">
+                		<img class="image" src="twi.png">
+                		<img class="image" src="fb.png">
+                	</div>
+                </div>
+            
+                  <div class="footer_contact">
+                	<div class="footer_item">
+                	<img class="footer_icon" src="call.png">
+                	<div class="footer_text">Lorem ipsum</div>
+                </div>
+               <div class="footer_item">
+                	<img class="footer_icon" src="dog.png">
+                	<div class="footer_text">Lorem ipsum</div>
+                </div>
+                <div class="footer_item">
+                	<img class="footer_icon" src="pin.png">
+                	<div class="footer_text">Lorem ipsum</div>
+                </div>
+                </div>
+           </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="listener.js"></script>
+<script src="buttontheme.js"></script>
+     <script >
+        changeday()
+    </script>
+     
+</html>
